@@ -1,4 +1,5 @@
 class ImagePaths {
-  static const String logo = 'assets/images/logo.jpg';
-  static const String sampleImage = 'assets/images/sample.png';
+  static const base = 'assets/images';
+  static const String logo = '${base}/logo.jpg';
+  static const String sampleImage = '${base}/sample.png';
 }

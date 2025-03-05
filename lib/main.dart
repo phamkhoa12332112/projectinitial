@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:projectinitial/presentation/pages/splash/splash_first_page.dart';
+import 'package:projectinitial/presentation/pages/tab/data_provider_wrap.dart';
 import 'package:projectinitial/utils/theme/theme.dart';
 
 void main() async {
@@ -42,10 +42,7 @@ class _MyAppState extends State<MyApp> {
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
-      initialRoute: '/',
-      routes: {
-        '/': (context) => SplashScreen(toggleTheme: _toggleTheme),
-      },
+      home: DataProviderWrapper(),
     );
   }
 }

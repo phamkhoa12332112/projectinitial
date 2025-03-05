@@ -51,6 +51,25 @@ android {
             signingConfig = signingConfigs.debug
         }
     }
+
+    flavorDimensions "app"
+
+    productFlavors {
+        dev {
+            dimension "app"
+            applicationId "com.example.projectinitial.dev"
+            versionCode 1
+            versionName "1.0"
+            resValue "string", "app_name", "DEV Project Initial"
+        }
+        prod {
+            dimension "app"
+            applicationId "com.example.projectinitial.prod"
+            versionCode 1
+            versionName "1.0"
+            resValue "string", "app_name", "Project Initial"
+        }
+    }
 }
 
 flutter {

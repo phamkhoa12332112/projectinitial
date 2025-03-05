@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:projectinitial/utils/resources/locale_text.dart';
 
 import '../homepage/homepage.dart';
 
@@ -34,9 +35,9 @@ class _SecondarySplashScreenState extends State<SecondarySplashScreen> {
     return Scaffold(
       body: Center(
         child: Text(
-          "welcome".tr(),
+          LocaleText.welcome,
           style: Theme.of(context).textTheme.headlineLarge,
-        ),
+        ).tr()
       ),
     );
   }
